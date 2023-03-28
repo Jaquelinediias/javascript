@@ -1,12 +1,14 @@
- let idade = 90;
-
-
- if (idade < 13) {
-    console.log("você é maior de idade.");
- } else{
-    console.log("você é Menor de idade.");
+ let idade= 10;
+/*
+ if( idade >= 18){
+   if(idade <60){
+      console.log("você é um adulto");
+   }
  }
-
+ */
+if(idade>=18 && idade < 60) {
+   console.log("você é um adulto");
+}
 
               
 
