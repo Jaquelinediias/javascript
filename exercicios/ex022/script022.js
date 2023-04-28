@@ -7,20 +7,17 @@ for(let n = 0; n < 10; n++){
 */
 
 // 2. EXEMPLO
+
 /*
 let cores = ['vermelho', 'Rosa', 'Branco', 'Preto'];
 cores.push('verde');
-*/
 
-/*
 for( let n = 0; n < cores.length; n++ ) {
     console.log(cores[n])
 }
-*/
 
 // 3. EXEMPLO/ mais simplificada.
 
-/*
 for(let i in cores) {
     console.log(cores[i]);
 }
