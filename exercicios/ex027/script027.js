@@ -4,21 +4,21 @@
 function click() {
     console.log("click no botão");
 }
-
+/*
 // 2. DEFINIÇÃO DO EVENTO DE CLIQUE ATRAVÉS DO PRÓPRIO JAVASCRIPT
-/*let botao = document.querySelector('.acesso');
+let botao = document.querySelector('.acesso');
 botao.addEventListener("click", click);
-*/
+
 
 //OPÇÃO.03
-/*let botao = document.querySelector('.acesso');
+let botao = document.querySelector('.acesso');
 botao.addEventListener("click", function(){
     click();
 });
-*/
+
 
 //OPÇÃO.04
-/*let botao = document.querySelector('.acesso');
+let botao = document.querySelector('.acesso');
 botao.addEventListener("click", ()=> {
          click();
 });
