@@ -30,14 +30,6 @@ O atributo outerHTML da estrutura DOM(Document object model) obtem um fragmento 
 */
 
 
-
-
-
-
-
-
-
-
 /*
  //innerHTML: Quando usar innerHTML?
 Utilizado na manipulação do DOM, o innerHTML retorna todo o texto e o html que existem no elemento. Ele retorna todo o html existente, retornando também às tags, e não somente o texto.

@@ -28,7 +28,7 @@ function clicou (){
 
 
 //---------------------------------------------------------
-   ul.children[1].append("(Feriado)");
+   ul.children[0].append("(Feriado)");
    /* APPEND: append() O método append() da Interface FormData adiciona um novo valor dentro de uma chave existente dentro do objeto FormData ou adiciona a chave caso ainda não exista. O append só funciona pra texto. é quando eu adiciona um conteúdo ao conteudo que já tem dentro desse elemento*/
 }
 
