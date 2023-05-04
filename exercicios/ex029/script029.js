@@ -6,12 +6,8 @@ function clicou (){
     let newLi =document.createElement("li");
     newLi.innerText = "Mochila";
 
-
-
    ul.prepend(newLi);
 
-
-   
    ul.innerHTML += "<li>Novo Item</li>"
 
 //--------------------------------------------------
