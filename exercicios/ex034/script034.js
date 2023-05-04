@@ -1,4 +1,4 @@
-function soltou(e) {
+/*function soltou(e) {
     console.log('Aperta tecla' + e.code);
     console.log('SHIFT ?' + e.shiftKey);
     console.log('--');
