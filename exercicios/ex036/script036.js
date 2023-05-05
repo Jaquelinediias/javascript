@@ -61,7 +61,6 @@ class Person {
     }
  }
 
-
  let p1 = new Person("Bento");
  let p2 = new Person ("Joaquim");
  let p3 = new Person ("Laura");
