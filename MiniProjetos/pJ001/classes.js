@@ -96,7 +96,7 @@ class Stage {
 
     doAttack(attacking, attacked){
        if(attacking.life <= 0 || attacked.life <= 0) {
-          console.log('adversário morto.');
+          console.log('O adversário está morto.');
           return
        }
 
@@ -108,6 +108,7 @@ class Stage {
 
        if(actualAttack > actualDefense) {
           attacked.life -= actualAttack;
+          console.log(`${attacking.name} causou ${actualAttack.toFixed(2)} de dando em ${attacked.name}`);
 
        } else{
         console.log(`${attacked.name} conseguiu defender..`)
