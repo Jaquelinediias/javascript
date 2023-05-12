@@ -95,8 +95,25 @@ class Stage {
     }
 
     doAttack(attacking, attacked){
-        console.log(`${attacking.name} está atacando ${attacked.name}`)
-        
+       if(attacking.life <= 0 || attacked.life <= 0) {
+          console.log('adversário morto.');
+          return
+       }
+
+       let attackFactor = (Math.random() * 2).toFixed(2);
+       let defenseFactor = (Math.random() * 2).toFixed(2);
+       
+       let actualAttack = attacking.attack * attackFactor;
+       let actualDefense = attacked.defense * defenseFactor;
+
+       if(actualAttack > actualDefense) {
+          attacked.life -= actualAttack;
+
+       } else{
+        console.log(`${attacked.name} conseguiu defender..`)
+       }
+    
+       
         this.update();
     }
 

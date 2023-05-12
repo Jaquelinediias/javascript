@@ -1,5 +1,5 @@
 let char = new witch("Meduza");
-let monster = new LittleMonter();
+let monster = new BigMonster();
 
 const stage = new Stage(
     char,
