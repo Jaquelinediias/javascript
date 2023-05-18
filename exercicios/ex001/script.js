@@ -1,13 +1,12 @@
-let nome = "Jaqueline"; // String 
-let idade = 90 ; // Number
-let logado = true; // boolean
-let list = ['café ','ovo', 'farinha']; // array
-let nomeCompleto = {nome: "Jaqueline", idade: 26} // object
-/* 
-o comando abaixo exibe os dados no Console
+let idade = 90; //number
+let nome = "Laura"; //string
+let logado = true; // boolean 
+let list = ['ovo, leite, manteiga']; // array 
+let nomeCompleto = {nome: "Laura", idade: 30} // Objeto
 
-*/
-console.log(typeof list)
+console.log(typeof logado)
+
+
 
 
 
