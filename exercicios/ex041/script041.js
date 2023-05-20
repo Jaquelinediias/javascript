@@ -41,7 +41,7 @@ console.log(encontroFds.getFullDate());
 
 
 // CONSTRUTOR
-
+/*
 let person1 = {
     name: "Brisa",
     lastName:"Dias",
@@ -54,7 +54,30 @@ let person1 = {
     }
    
 }
-
-
 person1.start();
 console.log(person1.getFullName())
+*/
+
+// FUNCIONAL HERANÇA:
+
+
+const defaultUser = { //objeto padrão]
+    name: '',
+    email: '',
+}
+ 
+let user1 = {
+    ...defaultUser,
+    name: 'Rosi',
+    email: 'jaquelinedias@.gmail.com'
+}
+console.log(user1);
+
+let adm1 = {
+    ...defaultUser,
+    name: 'Adm chapadão',
+    email: 'adm@.com.br',
+    level:2,
+}
+console.log(adm1)
+
