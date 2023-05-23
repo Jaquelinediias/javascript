@@ -6,6 +6,23 @@ const defaultCharacter = {
     defense:0
 }
 
+
+/* conts defaultCharacter = {
+    name:',
+    maxlife:'',
+
+
+}
+
+conts createKnight = (name) => {
+    return {
+        ...defaultCharacter,
+        name:"",
+        maxlife:"",
+    }
+}
+
+*/
 const createKnight = (name) => {
     return {
        ...defaultCharacter,
