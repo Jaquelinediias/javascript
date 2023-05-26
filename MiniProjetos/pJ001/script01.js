@@ -1,12 +1,11 @@
-const char = createKnight('Jaqueline');
-const monster = createLitterMonster();
+let caracteres = new feiticeiro('Paçoca');
+let monstro = new cavaleiro();
 
+const cenario = new Cenario(
+  caracteres,
+  monstro,
+  document.querySelector('#caracteres'),
+  document.querySelector('#monstro')
+);
 
-stage.start(
-    char,
-    monster,
-    document.querySelector('#char'),
-    document.querySelector('#monster')
-)
-
-console.log(monster.name);
+cenario.start();
