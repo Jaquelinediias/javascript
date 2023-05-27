@@ -59,12 +59,12 @@ class grandemonstro extends Personagem {
 
 
 class Cenario {
-    constructor(lutador1, lutador2, lutador1El, lutador2El, logobjetos){
+    constructor(lutador1, lutador2, lutador1El, lutador2El, logObjetos){
          this.lutador1 = lutador1;
          this.lutador2 = lutador2;
          this.lutador1El = lutador1El;
          this.lutador2El = lutador2El;
-         this.log = logobjetos;
+         this.log = logObjetos;
 
     }
 
@@ -89,11 +89,11 @@ k
 
 
        let porcetagem2 = (this.lutador2.vida / this.lutador2.vidaMaxima) * 100;
-       this.lutador2El.querySelector('.barra').style.width = `${porcetagem}%`;
+       this.lutador2El.querySelector('.barra').style.width = `${porcetagem2}%`;
     }
 
     atacar(atacante, atacado) {
-        if(atacante.life <= 0 || atacado.life <= 0) {
+        if(atacante.vida <= 0 || atacado.vida <= 0) {
             this.log.adicionarmensagem('O adversario está MORTO.');
             return;
         }
@@ -111,7 +111,7 @@ k
             this.log.adicionarmensagem(`${atacante.name} causou ${ataquereal.toFixed(2)} de dano em ${atacado.name}`)
 
         } else{
-           this.log.adicionarmensagem`${atacado.name} conseguiu DEFENDER...`
+           this.log.adicionarmensagem`${atacante.name} conseguiu DEFENDER.`
         }
        
 
@@ -119,26 +119,28 @@ k
         this.atualizar();
     }
 }
-class log{
+ class Log {
     lista = [];
 
-    constructor(listaEl) {
-       this.listaEl = listaEl;
+
+    constructor(listaE1) {
+        this.listaE1 = listaE1;
     }
 
     adicionarmensagem(msg) {
-        this.lista.push(msg);
+       this.lista.push(msg);
+       this.render();
 
     }
-    
-    renderizar(){
-        this.listaEl.innerHTML = '';
+
+    render() {
+        this.listaE1.innerHTML = '';
+
         for(let i in this.lista) {
-            this.listaEl.innerHTML += `<li>${this.lista[i]}</li>`
+            this.listaE1.innerHTML += `<li>${this.lista[i]}</li>`;
         }
     }
-}
-
+ }
 
 
 
