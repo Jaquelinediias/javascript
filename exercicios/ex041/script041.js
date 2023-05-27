@@ -1,67 +1,47 @@
- // Sem utiliza programação funcional//
- /*let person = {
-    name: 'Livia',
-    lastName:'Silveira',
-    age: 35
-}
+
+ /*/ Uma factory é uma fabrica de cria coisas. 
+ function createPerson(name, lastName, age){   //criar pessoa
+     return{
+        name,
+        lastName,
+        age,
+
+        getfullName() {
+            return `${this.name} ${this.lastName}`;
+        }
+     }
+ }
+let person1 = createPerson('Jaqueline', 'Lacerda', 35);
+let person2 = createPerson('Eva','Conceição', 15);
+
+console.log(person1.getfullName());
 */
 
-//
 
-/*function createCarros (marca, cor, ano) {
-    return{
-        marca,
-        cor,
-        ano,
-        getfullCar(){
-            return `${this.cor} ${this.ano}`
-
-        }
-    }
-}
-let marcasDeCarros = createCarros("Ford", "Vermelho","2022");
-console.log(marcasDeCarros.getfullCar())
-*/
-
-/*let encontroFds = createEncontro("Lais","Cinema", 15);
-
-function createEncontro(nome, local, horario){
-    return{
-        nome,
-        local,
-        horario,
-
-        getFullDate(){
-            return `Eu e a ${this.nome} iremos ao ${this.local} as ${this.horario}`
-        }
-    }
-}
-console.log(encontroFds.getFullDate());
- */
 
 
 // CONSTRUTOR
-/*
+
 let person1 = {
     name: "Brisa",
-    lastName:"Dias",
+    lastName:"silva",
     age: 45,
     getFullName(){
         return`${this.name} ${this.age}`
     },
     start() {
-        console.log("Que comecem os jogos.")
+        console.log('deu start ')
+        
     }
-   
+    
 }
 person1.start();
 console.log(person1.getFullName())
-*/
+
 
 // FUNCIONAL HERANÇA:
 
-
-const defaultUser = { //objeto padrão]
+/*const defaultUser = { //objeto padrão]
     name: '',
     email: '',
 }
@@ -80,4 +60,4 @@ let adm1 = {
     level:2,
 }
 console.log(adm1)
-
+*/
