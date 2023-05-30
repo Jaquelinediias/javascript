@@ -22,7 +22,7 @@ console.log(person1.getfullName());
 
 // CONSTRUTOR
 
-let person1 = {
+/*let person1 = {
     name: "Brisa",
     lastName:"silva",
     age: 45,
@@ -37,13 +37,15 @@ let person1 = {
 }
 person1.start();
 console.log(person1.getFullName())
-
+*/
 
 // FUNCIONAL HERANÇA:
 
-/*const defaultUser = { //objeto padrão]
+const defaultUser = { //objeto padrão]
     name: '',
     email: '',
+    level: 1,
+    date: 08,
 }
  
 let user1 = {
@@ -57,7 +59,8 @@ let adm1 = {
     ...defaultUser,
     name: 'Adm chapadão',
     email: 'adm@.com.br',
-    level:2,
+   
 }
+
 console.log(adm1)
-*/
+
