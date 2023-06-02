@@ -17,6 +17,24 @@ JSON = Javascript Object Notation
 
 ///Callback? função que criopara ser executada no  futuro
 
-document.querySelector("#botao").addEventListener('click', () => {
-    alert("clicou no Botao")
-})
+function clicou() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => {
+        console.log(`Status:${response.status}`)
+        return response.json();
+    })
+    .then((json) => {
+        alert(`Clicou no primeiro post:${json[0].title}`)
+    })
+    .catch((error) => {
+        alert("Algo está errado.")
+    })
+    .finally(() =>{
+        alert("Tudo OK, acesse a página")
+
+    })
+   
+}
+
+document.querySelector('#botao').addEventListener('click', clicou)
+
