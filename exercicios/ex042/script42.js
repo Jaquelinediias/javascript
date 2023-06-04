@@ -9,8 +9,8 @@ async function clicou() {
     alert("Clicou");
 }
 
-function inserir() {
-    fetch('https://jsonplaceholder.typicode.com/posts', 
+ async function inserir() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts', 
         {
             method: 'POST',
             headers:{
@@ -21,13 +21,10 @@ function inserir() {
                 body:'Corpo de teste',
                 userId: 2
             })
-        })
-    .then((Response) => {
-        return Response.json();
-    })
-    .then((json) => {
-        console.log(json);
-    });
+        });
+    let json = await response.json();
+
+    console.log(json);
 }
 
 document.querySelector('#botao').addEventListener('click', clicou);
