@@ -10,13 +10,27 @@ alert(somar);
 
 // condicionais.
 
+let hora = 10;
+/* Maior  ou igual a 12 e se hora for menor que 18
+if( hora >= 12 && hora < 18 ) {
+   console.log("Hora de trabalhar");
+}
+*/
+if( hora == 12 || hora == 18) {
+    console.log("Hora de trabalhar");
+}
 
-let viagem = 3000;
 
-if(viagem >= 1200) {
+
+let viagem = 2500;
+
+if(viagem >= 1200  ) {
     console.log("Compra Passagens");
-} else{
-    console.log("Junta mais Grana :(")
+} else if(viagem == 500){
+    console.log("Junta por mais 2 mêses")
+   
+} else if(viagem <= 400) {
+    console.log("Não podemos viajar ")
 }
 
 
