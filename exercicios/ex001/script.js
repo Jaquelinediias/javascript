@@ -22,19 +22,32 @@ if( hora == 12 || hora == 18) {
 
 
 
-let viagem = 2500;
+/*let viagem = 600;
 
 if(viagem >= 1200  ) {
     console.log("Compra Passagens");
-} else if(viagem == 500){
+} else if(viagem >= 500){
     console.log("Junta por mais 2 mêses")
    
-} else if(viagem <= 400) {
+} else if(viagem < 400) {
     console.log("Não podemos viajar ")
+}
+*/
+
+let hora1 = 23;
+
+if(hora1 >= 18 && hora1 <= 23) {
+    console.log ("Boa Noite..")
 }
 
 
+let sobreNome= "Silva"
 
+if(sobreNome == "dias") {
+    console.log("Você é Menbro da familia")
+} else{
+    console.log("Familia Errada")
+}
 
 
 
