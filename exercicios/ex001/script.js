@@ -44,7 +44,7 @@ if(hora1 >= 18 && hora1 <= 23) {
 let sobreNome= "Silva"
 
 if(sobreNome == "dias") {
-    console.log("Você é Menbro da familia")
+    console.log("Você é Membro da familia")
 } else{
     console.log("Familia Errada")
 }
