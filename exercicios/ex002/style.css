@@ -1,0 +1,33 @@
+
+ p {
+    
+    font-size: 2rem;
+ }
+ 
+.red {
+    
+     padding: 7px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+
+     background-color: red;
+     
+ }
+ .blue{
+    padding: 7px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+
+     background-color: blue;
+ }
+ .green{
+    padding: 7px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+
+     background-color: green;
+ }
+ 

@@ -1,7 +1,9 @@
-let modeloCarro = "Hb20";
-let PrecodeBolos = 19.99;
-let cidade = " São Paulo";
+ const troca = document.querySelector(".troca");
+ 
 
-console.log( modeloCarro)
-console.log (PrecodeBolos)
-console.log (cidade)
+function clicou(color) {
+    troca.style.color = color; 
+   
+
+    //corpo.style.background = "#cccc"
+}
