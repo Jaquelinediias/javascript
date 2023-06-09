@@ -1,4 +1,4 @@
- function blue(){
+ /*function blue(){
     limpar()
     document.getElementById("troca").classList.add('blue')
     document.querySelector("p").innerHTML = "Azul"
@@ -19,3 +19,9 @@
     document.getElementById("troca").classList.remove('red')
     document.getElementById("troca").classList.remove('green')
  }
+*/
+
+function mostrar(elemento) {
+    elemento.style.display ='none';
+    document.getElementById("telefone").style.display = "block";
+}
