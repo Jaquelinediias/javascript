@@ -1,17 +1,21 @@
- const troca = document.querySelector(".troca");
- var listaDeCores = ['blue', 'red', 'green'];
- var index = 0;
- 
-function clicou(color) {
-    troca.style.color = color; 
-    document.querySelector("p").innerHTML = "Senhoras(o)"
+ function blue(){
+    limpar()
+    document.getElementById("troca").classList.add('blue')
+    document.querySelector("p").innerHTML = "Azul"
+ }
+ function red(){
+    limpar()
+    document.getElementById("troca").classList.add('red')
+    document.querySelector("p").innerHTML = "vermelho"
+ }
+ function green(){
+    limpar()
+    document.getElementById("troca").classList.add('green')
+    document.querySelector("p").innerHTML = "verde"
+ }
 
-    if(index +1 == listaDeCores.length){
-        index = 0;
-    }else{
-        index = index + 1;
-    }
-    
-    troca.textContent = listaDeCores[index]
-
-}
+ function limpar(){
+    document.getElementById("troca").classList.remove('blue')
+    document.getElementById("troca").classList.remove('red')
+    document.getElementById("troca").classList.remove('green')
+ }
