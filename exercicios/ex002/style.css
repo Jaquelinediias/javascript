@@ -1,26 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@400;600&display=swap');
 
-@keyframes spin {
-   0% {
-      transform: rotate(0deg);
-   }
-   100%{
-      transform: rotate(360deg);
-   }
-}
-
-*{
-   margin: 0;
-}
-
 body{
-
-  
- 
-  
-  
+   background-color: #cedeeac8;
 }
-
 
 p{
   font-size: 4rem;
@@ -33,53 +15,48 @@ p::first-letter{
 font-size: 8rem;
 }
 
-button{
-  
-   display: flexbox;
-   justify-content: space-between;
-   margin: 10px;
-   font-size: 18px;
-}
+
 .blue{
    width:200px;
+   margin-top: 10px;
    padding: 20px;
    font-family: 'Lilita One', cursive;
+   font-size: 20px;
    background-color: #308cf5;
 }
 
-.blue:hover{
-   border-radius: 50px;
-  animation: spin 1s ;
-}
+
+
 .yellow{
    width:200px;
+   margin-top: 10px;
    padding: 20px;
+   font-size: 20px;
    font-family: 'Lilita One', cursive;
    background-color: #ffff00;
 }
 .red{
    width:200px;
+   margin-top: 10px;
    padding: 20px;
-    font-family: 'Lilita One', cursive; ;
-   background-color: rgb(255, 0, 0);
+   font-size: 20px;
+   font-family: 'Lilita One', cursive; ;
+   background-color: #ff0000;
 }
 .pink{
    font-family: 'Lilita One', cursive;
    width:200px;
+   margin-top: 10px;
    padding: 20px;
+   font-size: 20px;
    background-color: #d87093;
 }
-.image{
-   width: 100%;
-   height: 500px;
-   background-color:#3CA6A6;
-  
-  
-  
-  background-image: url(../ex002/imagem/2440658_14539.jpg);
-  background-position: center;
-  background-size: contain  ;
-  background-repeat: no-repeat;
+div{
+ margin: auto;
+ 
+ width: 200px;
+ height: 200px;
+
 }
 
 
@@ -89,7 +66,7 @@ button{
 
 
 
-
+m
 
 
 
