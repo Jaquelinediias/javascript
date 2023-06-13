@@ -1,22 +1,10 @@
-let nome ='Robson';
-let sobrenome = 'Santos';
 
-let nomeCompleto = nome + ' ' + sobrenome;
+function mostrarTexto(elemento) {
 
-console.log("Nome: " + nomeCompleto);
+    document.getElementById("ocultar").style.display = "none"
+    
 
-// Exemplo de Templante String
-
-let nomeI = 'Erick';
-let sobrenomeI = 'Bessa';
-
-let nomeCompletoI = `${nomeI} ${sobrenomeI} Da Luz `;
-
-console.log("Nome:" + nomeCompletoI);
-
-// Exemplo02
-
-let idade = 27;
-let idadeString = `Idade: ${idade} anos`;
-
-console.log(idadeString);
+    if(display == 'none') {
+        ocultar.style.display = ' block';
+    }
+}
