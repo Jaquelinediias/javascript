@@ -1,10 +1,8 @@
 
-function mostrarTexto(elemento) {
-
+function esconderTexto() {
     document.getElementById("ocultar").style.display = "none"
-    
 
-    if(display == 'none') {
-        ocultar.style.display = ' block';
-    }
+}
+function mostrarTexto(){
+    document.getElementById("ocultar").style.display = "block"
 }

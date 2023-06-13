@@ -7,22 +7,31 @@
     <title></title>
 
     <style>
-        body{
-            background-color: #eb926ca9
-        }
+       
         h1{
             text-align: center;
         }
         p{
             font-size: 18px;
         }
-        
+        div{
+            background-color: #c795cc;
+        }
+        #esconde{
+            background-color: red;
+            color: #fff;
+        }
+        #mostrar{
+            background-color: #319831;
+        }
     </style>
 </head>
 <body >
-    <h1>Template String</h1>
+    <h1>Esconder e mostra Elementos</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam molestias eligendi neque sunt perferendis, ducimus impedit voluptatibus obcaecati necessitatibus. Culpa dolorum quis, suscipit sapiente atque animi dignissimos eum deleniti molestiae?</p>
+    <button id="esconde" onclick="esconderTexto('conteudo')">Esconder</button>
+
+   <button id="mostrar" onclick="mostrarTexto()">Mostra</button>
     
     <div id = ocultar>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam molestias eligendi neque sunt perferendis, ducimus impedit voluptatibus obcaecati necessitatibus. Culpa dolorum quis, suscipit sapiente atque animi dignissimos eum deleniti molestiae?</p>
@@ -33,7 +42,7 @@
         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quisquam numquam accusantium architecto reiciendis quae ad ipsa voluptas delectus amet cum ullam repellendus deleniti animi, ipsam excepturi laboriosam doloremque voluptate.</p>
     </div>
 
-    <button id="mostrar" onclick="mostrarTexto(this)">Esconder</button>
+    
 
     <script src="script004.js"></script>
 </body>
