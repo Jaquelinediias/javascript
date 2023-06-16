@@ -1,6 +1,6 @@
 /*
 Primeiro cria as váriaveis que vão recebe os Id dos inputs
-para peda os id utilizaremos os document....
+para pegar os id utilizaremos os document....
 depoois de seleciona 1 por 1 seguiremos para a crição das funções
 */
 const form = document.getElementById("form");
@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
   // codigo para chamar a função
   checkInputs();
 });
-/* nessa  parte aqui onde iremos cria a função a nos iremos pega os nomes de cada input. no caso é o nome de id que colocamos na hora de usa o atributo.
+/* nessa  parte aqui onde iremos cria a função e nos iremos pega os nomes de cada input. no caso é o nome de id que colocamos na hora de usa o atributo.
 no caso o valor do id. 
 exemplo entre parênteses 
  <input type="text" (id="username")/>
@@ -32,18 +32,16 @@ Depois que criamos a função  iremos fazer as condições para que funcione. po
 exemplo
 if (nome de usuárioValor {
     setErrorFor(username, "O nome de usuário é obrigatório");
+
 */
   if (usernameValue === "") {
     setErrorFor(username, "O nome de usuário é obrigatório.");
-    // se o usuario colocou o seu nome, seguira o processo
   } else {
     setSuccessFor(username);
   }
 
   if (emailValue === "") {
-    // primera condição pra dizerr que o email é obrigatorio
     setErrorFor(email, "O email é obrigatório.");
-    // segunda condição é pra ver se o email seguir os padrões de valido 
   } else if (!checkEmail(emailValue)) {
     setErrorFor(email, "Por favor, insira um email válido.");
   } else {
