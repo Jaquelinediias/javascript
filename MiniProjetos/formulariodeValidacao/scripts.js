@@ -1,39 +1,23 @@
-/*
-Primeiro cria as váriaveis que vão recebe os Id dos inputs
-para pegar os id utilizaremos os document....
-depoois de seleciona 1 por 1 seguiremos para a crição das funções
-*/
+
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
 
-// Não lembro o que significa esse codigo 
 form.addEventListener("submit", (e) => {
   e.preventDefault(); 
 
-  // codigo para chamar a função
+ 
   checkInputs();
 });
-/* nessa  parte aqui onde iremos cria a função e nos iremos pega os nomes de cada input. no caso é o nome de id que colocamos na hora de usa o atributo.
-no caso o valor do id. 
-exemplo entre parênteses 
- <input type="text" (id="username")/>
-*/
+
 function checkInputs() {
   const usernameValue = username.value;
   const emailValue = email.value;
   const passwordValue = password.value;
   const passwordConfirmationValue = passwordConfirmation.value;
-/*
-Depois que criamos a função  iremos fazer as condições para que funcione. por exemplo se na caixa do usurio estiver vazia sem o nome, nos iremos criar um cogido que emitira uma msg ou um alerta escrita uma msg de nome obrigatorio
 
-exemplo
-if (nome de usuárioValor {
-    setErrorFor(username, "O nome de usuário é obrigatório");
-
-*/
   if (usernameValue === "") {
     setErrorFor(username, "O nome de usuário é obrigatório.");
   } else {
@@ -49,7 +33,6 @@ if (nome de usuárioValor {
     setSuccessFor(email);
   }
 
-  // Iremos seguir fazendo outras condicões com cada nome de id até completa o ultimo.
 
   if (passwordValue === "") {
     setErrorFor(password, "A senha é obrigatória.");
@@ -58,7 +41,6 @@ if (nome de usuárioValor {
   } else {
     setSuccessFor(password);
   }
-  // Aqui temos outra condição com a sequencia de value
   if (passwordConfirmationValue === "") {
     setErrorFor(passwordConfirmation, "A confirmação de senha é obrigatória.");
   } else if (passwordConfirmationValue !== passwordValue) {
@@ -66,11 +48,9 @@ if (nome de usuárioValor {
   } else {
     setSuccessFor(passwordConfirmation);
   }
- // variável que vai pegar a class das Divs 
- // exemplo: <div class="form-control">
+ 
   const formControls = form.querySelectorAll(".form-control");
 
-  // não sei pra que serve esse código.
   const formIsValid = [...formControls].every((formControl) => {
     return formControl.className === "form-control success";
   });
