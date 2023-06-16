@@ -1,6 +1,3 @@
-const troca = document.getElementById('troca')
-
-
 
 function mudarCor(color){
    troca.style.color = color;
