@@ -4,28 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Formulário com Validação JavaScript</title>
     <link rel="stylesheet" href="./styles.css" />
-    <title> Formulário</title>
   </head>
   <body>
-      <h2>Formulario</h2>
+    <h2>Formulário Validação JavaScript</h2>
     <form id="form">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" placeholder="Digite seu nome...">
+      <label for="name">Nome:</label>
+      <input type="text" id="name">
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Insira seu E-mail...">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email">
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password" placeholder="Digite sua senha...">
+      <label for="password">Senha:</label>
+      <input type="password"  id="password">
 
-        <button type="submit">Enviar</button>
+      <label for="job">Situação de Trabalho:</label>
 
-       <a href="">Esqueceu sua senha?</a>
+      <select name="job" id="job">
+
+        <option value="">Está Buscando emprego?</option>
+        <option value="yes">Sim</option>
+        <option value="no">Não</option>
+
+      </select>
+      <label for="message">Mensagem:</label>
+      <textarea name="message" id="message"></textarea>
+      <button type="submit">Enviar</button>
     </form>
-  
-    
-
     <script src="./scripts.js"></script>
   </body>
 </html>
