@@ -16,7 +16,7 @@ let carros = {
 };
 
 console.log("Modelo:"+carros.marca)
-
+console.log("Noiva:"+exs[4])
 
 
 
