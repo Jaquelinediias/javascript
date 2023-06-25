@@ -1,38 +1,38 @@
+body{
+    background-color:#eeee;
+}
 aside{
-   display: flex; 
-   position: absolute;
-   top: 0;
-   right: 0;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+
 }
-img{
-    width: 80px;
+#menu-opener {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-
-
+    margin-top: 10px;
+    margin-right: 10px;
 }
-div#menu-opener {
-    padding:7px;
+#menu-area{
+    width: 0px;
+    height: 100vh;
+    background-color: #787676;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all ease .5s;
 }
-div#menu-area{
- background-color: #696969;
- width: 0px;
- height: 100vh;
- display: block;
- overflow: hidden;
- transition: all 0.5ms ease;
+#menu-area ul, #menu-area li{
+    padding:0;  
+    margin: 5px;
 }
-ul li{
-    list-style: none;
-    font-size: 18px; 
+ul a {
+   text-decoration: none;
+   padding: 5px;
+   color: #fff;
 }
-li a{
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    color: #fff;
-}
-
-ul li a:hover{
-    background-color: #100f0f;
-    transition: all 0.5ms ease;
+#menu-area li:hover{
+    background-color: black;
 }

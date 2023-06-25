@@ -1,8 +1,12 @@
-let btn = document.querySelector('#btn');
-let areaMenu = document.getElementById('#menu-area');
+const menuButton = document.getElementById('menu-opener');
 
-function click(){
-    if(areaMenu.style.width== "")
-}
-
+menuButton.addEventListener('click', () => {
+    let menuArea = document.getElementById('menu-area');
+    if(menuArea.style.width == '200px') {
+        menuArea.style.width = '0px'
+    } else{
+        menuArea.style.width = '200px'
+    }
+     
+})
     
