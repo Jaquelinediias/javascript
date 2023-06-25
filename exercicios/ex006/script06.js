@@ -11,12 +11,14 @@ if(idade >= 18) {
  //--------------------------------------------------------
           //Exemplo02 multiplicas condições
 
-let idade = 45;
+let idade = 18;
 
 if(idade >= 18 && idade < 60) {
      console.log("Você é um adulto"); 
 
-} 
+} else{
+    console.log('você é Menor de idade')
+}
 
 
 

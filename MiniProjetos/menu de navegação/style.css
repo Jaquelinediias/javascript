@@ -1,0 +1,38 @@
+aside{
+   display: flex; 
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+img{
+    width: 80px;
+    cursor: pointer;
+
+
+}
+div#menu-opener {
+    padding:7px;
+}
+div#menu-area{
+ background-color: #696969;
+ width: 0px;
+ height: 100vh;
+ display: block;
+ overflow: hidden;
+ transition: all 0.5ms ease;
+}
+ul li{
+    list-style: none;
+    font-size: 18px; 
+}
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+ul li a:hover{
+    background-color: #100f0f;
+    transition: all 0.5ms ease;
+}
