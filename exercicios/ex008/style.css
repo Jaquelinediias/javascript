@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+} 
+body{
+    height: 100vh;
+}
+nav.menu_lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0px 40px 1%;
+    box-shadow: 3px 0 0 #d35a82 ;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+nav.menu_lateral:hover{
+  width: 300px;
+}
+.btn_expandi{
+    width: 100%;
+    padding-left: 10px;
+}
+.btn_expandi > i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+ul li.item-menu:hover{
+    background-color: #b43c64;
+}
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 15px;
+    line-height:42px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 35px;
+}
+ul li.item-menu a .icon > i{
+    font-size: 40px;
+}
