@@ -1,41 +1,63 @@
-// Substitua o @ pela condicional correta para que
-// o resultado seja TRUE
+let dia = 8;
+let diaNome = '';
 
-let x = 10;
-let y = 5;
-console.log(x > y);
-
-// Substitua o @ pela condicional correta para que
-// o resultado seja FALSE
-
-let w = "10";
-let z = 10;
-console.log(w === z);
-
-// Substitua o @ pela condicional correta para que 
-// o resultado seja TRUE
-
-let a = 10;
-let b = 5;
-console.log(x != y);
-
-// Crie uma condicional para verificar se o preço da
-// Carne está barata ou caro. Ps: Até 45$ está barato.
-
-let preco = 40.3
-
-if(preco <= 45) {
-    console.log("A carne está barata");
-} else {
-    console.log("A carne está cara");
+switch(dia){
+    case 2:
+        diaNome ='Viagem para Bahia';
+        break;
+    case 3:
+        diaNome ='Voltas as Aulas'
+        break;
+    case 8:
+        diaNome ='Férias'
+        break;
+    default:
+       diaNome = 'Sem programação na agenda'
 }
+document.getElementById('dia').innerText= "Hoje é: "+diaNome;
 
-//--------------------------------
+/*switch(dia){
+    case 1:
+        diaNome = 'Segunda-Feira';
+        break;
 
-let valordoPC = 1.200
+    case 2:
+        diaNome = 'Terça-Feira';
+        break;
 
-if(valordoPC >= 1.500){
-    console.log ("Compra o PC");
-} else{
-    console.log("Não comprar #Triste")
+    case 3:
+        diaNome = 'Quarta-Feira';
+        break
+       
+    case 4:
+        diaNome = 'Quinta-Feira'
+        break;
+       
+    case 5:
+        diaNome = 'Sexta-Feira'
+        break;
+       
+    case 6:
+        diaNome = 'Sábado'
+        break;
+       
+    case 7:
+        diaNome = 'Domingo'
+        break;
+       
 }
+*/
+// recurso default
+/*
+switch(dia){
+    case 6:
+    case 7:
+        diaNome = 'Final de Semana';
+        break;
+    default:
+        diaNome = 'Dia de Semana';
+        break;
+}
+document.getElementById('dia').innerText= "Hoje é: "+diaNome;
+*/
+
