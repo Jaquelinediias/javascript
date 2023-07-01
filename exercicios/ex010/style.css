@@ -19,10 +19,10 @@ body{ /* Para centraliza todos os elementos no centro da tela*/
 /*Quando a gente aplica o tema escuro iremos add uma cor no body*/
 
 body.dark{
-    background-color: #292c35;
+    background-image: url(./gato.black.jpg);
 }
 
-/* Estiliza o ckeckbox*/
+/* Estiliza o ckeckbox do input*/
 .checkbox {
     opacity: 0;
     position: absolute;
