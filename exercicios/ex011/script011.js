@@ -1,4 +1,4 @@
-let bck = document.querySelector('body');
+let bck = document.querySelector ('body');
 
 function pink(){
   bck.style.background = "pink"
@@ -6,8 +6,11 @@ function pink(){
 }
 function blue(){
   bck.style.background = "blue"
-   
 }
 function green(){
   bck.style.background = "green"
 }
+
+
+
+
