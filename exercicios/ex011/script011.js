@@ -1,18 +1,13 @@
-let profession = "policial";
+let bck = document.querySelector('body');
 
-console.log("profissão: "  +  profession);
-
-switch (profession) {
-    case 'Biólogo':
-        console.log('Your shirt will be GREEN');
-        break;
-    case 'bombeiro':
-        console.log('Your shirt will be RED');
-        break;
-    case 'policial':
-        console.log('Your shirt will be BLUE');
-        break;
-    default:
-        console.log('Your shirt will be BLACK');
-        break;
+function pink(){
+  bck.style.background = "pink"
+   
+}
+function blue(){
+  bck.style.background = "blue"
+   
+}
+function green(){
+  bck.style.background = "green"
 }

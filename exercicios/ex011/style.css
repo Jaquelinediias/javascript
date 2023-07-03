@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    margin: 10px;
+}
+#pink{
+    width: 70px;
+    padding: 10px;
+    background-color: #f08080;
+    border-color: #f08080;
+    cursor: pointer;
+}
+#blue{
+    width: 70px;
+    padding: 10px;
+    background-color: #6495ed;
+    border-color: #6495ed;
+    cursor: pointer;
+}
+#green{
+    width: 70px;
+    padding: 10px;
+    background-color: #adff2f;
+    border-color: #adff2f;
+    cursor: pointer;
+}
