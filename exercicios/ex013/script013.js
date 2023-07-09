@@ -1,19 +1,50 @@
-/*
-function somar(x, y) {
-    return x + y;
+/*function mudaImg(novoArq, animalname) {
+   document.querySelector(".imagem").setAttribute('src','imagem/'+novoArq)
+   document.querySelector('.imagem').setAttribute('data-animal', animalname)
 }
-*/ 
-//ARROW FUNCTION 01
-/*
-const somar = (x, y) => {
-    return x + y;
+// 
+function nomeAnimal(){
+    let animal = document.querySelector('.imagem').getAttribute('data-animal')
+    alert('o Animal é um: ' +animal);
 }
 */
-// ARROW FUNCTION 02
-
-const somar = (x, y) => x + y;
-
-console.log(somar(10, 5));
 
 
-/* () => {}  Isso é uma arrow function*/
+/*
+alterar()
+
+ let texto = '';
+ for( let i = 0; i < 50; i++){
+    texto = texto + i + '<br>';
+ }
+document.getElementById('demo').innerHTML = texto;
+
+let carros = ['ferrari', 'palio']
+let html = '<ul>';
+
+for(let c  in carros){
+ html+= '<li>'+ carros[c] + '</li>'
+}
+
+while(c < 10){
+
+}
+*/
+
+
+let tamanho = document.querySelector('texto').scrollTop
+console.log()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
