@@ -1,35 +1,9 @@
-/*function add(){   //função que adciona ao o variável
-    let count =0;
-    count++;
-}
-add();
-add();
-console.log(count);
-*/
-//-------------------------------------------------//
-/*
-let count =0;  //Variável de Scopo Globol
-
-function add(){   
-    count++;
-}
-add();
-add();
-console.log(count);
-*/
-//----------------------------------------------
-
- // Variável de Escopo local ou PRIVADA
- // Quando crio uma variável dentro de uma função.
-
- let count = 0;
-
-function add() {
-    let count = 0;
-    count++;
+let nome = 'Jaqueline  Luz Silveira '
+let resultado = '';
+if(nome.indexOf('Luz') > -1) {
+    resultado = 'Achou!'
+} else{
+    resultado = 'Não achou!'
 }
 
-add();
-add();
-console.log(count);
-
+console.log(resultado);
