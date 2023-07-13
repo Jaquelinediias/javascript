@@ -1,5 +1,5 @@
 let nome = ' Jaqueline Dias Silveira Martins'
-let resultado = nome.
+let resultado = nome.split(' ')
 
 //split(' ')Função que transforma uma string em uma array 
 
@@ -7,7 +7,7 @@ let resultado = nome.
 //charAt(2)Eu quero saber qual é o caractere que está na posição 2.
 
 
-//trim()Função que removeespaço vazios tanto do começo ou do fim de uma string.
+//trim()Função que remove espaço vazios tanto do começo ou do fim de uma string.
 
 
 //toLocaleLowerCase()Texto em minusculo
