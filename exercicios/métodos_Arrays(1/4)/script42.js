@@ -1,6 +1,6 @@
 let lista = ['Ovo', 'Leite', 'Manteiga'];
 
-lista[0] = 'Farinha'
+lista[lista.length]= 'Farinha'
 
 let res = lista;
   
