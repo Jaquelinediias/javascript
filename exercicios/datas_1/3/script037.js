@@ -32,6 +32,8 @@ let novoValor = time
 
 let j = new Date()
 
+j.setFullYear(2025) // Troca o Ano.
+
 j.setDate(j.getDate() + 60) // manipula datas.
 
 j.setHours(j.getHours() + 15) // manipula horas.
