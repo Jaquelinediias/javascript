@@ -17,7 +17,7 @@ if(idade >= 60){
   
   // Exemplo de Condicionais Dependentes.
   
-let idade = 95;
+let idade = 100;
 
 if(idade < 18){
     console.log('Você é uma criança.');
