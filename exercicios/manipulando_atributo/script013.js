@@ -1,4 +1,4 @@
-/*function mudaImg(novoArq, animalname) {
+function mudaImg(novoArq, animalname) {
    document.querySelector(".imagem").setAttribute('src','imagem/'+novoArq)
    document.querySelector('.imagem').setAttribute('data-animal', animalname)
 }
@@ -7,7 +7,7 @@ function nomeAnimal(){
     let animal = document.querySelector('.imagem').getAttribute('data-animal')
     alert('o Animal é um: ' +animal);
 }
-*/
+
 
 
 /*
