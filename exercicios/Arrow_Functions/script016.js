@@ -26,6 +26,7 @@ let somar = (x, y) => x + y;
     return nome.length;
 }
 */
+
 let letrasNome = (nome) => nome.length;
 
 console.log(letrasNome('JaquelineDias'));
