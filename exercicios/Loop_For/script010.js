@@ -4,6 +4,7 @@ while(c <= 200){
    c++
 }
 */
+
 /*
 var c = 1;
 let html = ''
@@ -28,26 +29,19 @@ document.getElementById('ativo'). innerHTML = texto;
 
 // For Loo Array
 
-//let carros = ['Palio', 'Fiat', 'Fusca', 'bicicleta'];
-//let html = '<ul>';
+let carros = ['Palio', 'Fiat', 'Fusca', 'bicicleta'];
+let html = '<ol>';
 
-//for(let i in carros ){
-    //html+= '<li>'+ carros[i] + '</li>';
-//}
-//html +='</ul>'
-//document.getElementById('ativo').innerHTML = html;
+for(let i in carros ){
+    html+= '<li>'+ carros[i] + '</li>';
+}
+html +='</ol>'
+document.getElementById('ativo').innerHTML = html;
 
 
-/*for(let i = 0; i <= 10; i++){
+for(let i = 0; i <= 10; i++){
    if(i % 2 !== 0){
     console.log(i)
    }
 }
-
-function aperta(){
-    document.querySelector('h1.troca').innerHTML ="For Loop"
-    document.querySelector('body').style.background = "pink"
-    
-}
-*/
 
