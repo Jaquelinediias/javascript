@@ -2,7 +2,7 @@ async function enviar(){
     let arquivo = document.getElementById('arquivo').files[0];
 
     let body = new FormData();
-    body.append('title, etc etc')
+    body.append('title', 'etc etc')
     body.append('arquivo', arquivo)
 
   let req = await fetch('https://www.meusite.com.br/upload',{
@@ -17,6 +17,6 @@ async function enviar(){
 
 
 
-// Thumbnails com Js
+
 
 
